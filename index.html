@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ARAFA C M - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          ARAFA C M
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          arafaappu50@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +917012519368
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        
+      <div>
+          <h1>
+            Hi, I'm Arafa C M! 
+          </h1>
+          <p>
+            I am a BTech Graduate in Computer Science. I am familiar with Front end development, Responsive Web Design, Python, JavaScript, HTML and CSS. I like to code and solve problems and I hope to have a career where I could do that.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/c.png"/>
+            <h6>C Programming</h6>
+           
+          </div>    
+
+          <div class="skill">
+            <img src="html_finalprojimages/Python.png"/>
+            <h6>Python</h6>
+            
+          </div>  
+
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Culprit Face Identification System</h3>
+            <ul>
+              <li>Developed a Culprit face identification system using face encoding techniques by matching known criminal records as a part of college mini project</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Wrong Way Vehicle Detection</h3>
+            <ul>
+              <li>Developed an AI based system using YOLO for object detection and Kalaman Filter for tracking vehicles moving against traffic .</li>
+            </ul>
+          </div>
+          <hr>
+         
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+         Arafa is a quick learner. He is a good student with problem solving skills and has an eye for details.
+         He works hard and dreams of becoming a developer. He also works continuosly to improve his craft.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+         Working with Arafa was great. He likes to code and always improves his craft everyday.
+         He is a great leader and a team worker and helps us overcome obstacles with his problem solving skills.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+         In the four years I've studied with him, Arafa was always keen on learning new things. He had 
+         good skills in the computer and was interested to learn more. He has good communication skills and good social skills. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thankyou for your Recommendation! Love </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
